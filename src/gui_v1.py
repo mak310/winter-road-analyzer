@@ -87,6 +87,31 @@ layout = [
     ],
 
     [
+        sg.Text("制動距離係数")
+    ],
+
+    [
+        sg.Text(
+            "-",
+            key="-BRAKE-",
+            font=("Meiryo", 14)
+        )
+    ],
+
+    [
+        sg.Text("運転アドバイス")
+    ],
+
+    [
+        sg.Multiline(
+            "",
+            size=(45, 4),
+            key="-ADVICE-",
+            disabled=True
+        )
+    ],
+
+    [
         sg.Button("終了")
     ]
 
@@ -95,7 +120,7 @@ layout = [
 window = sg.Window(
     "Winter Road Analyzer",
     layout,
-    size=(550, 500)
+    size=(600, 650)
 )
 
 while True:
@@ -128,6 +153,14 @@ while True:
 
         window["-SPEED-"].update(
             result["speed"]
+        )
+
+        window["-BRAKE-"].update(
+            result["brake_distance"]
+        )
+
+        window["-ADVICE-"].update(
+            result["advice"]
         )
 
 window.close()
