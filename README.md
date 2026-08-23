@@ -95,9 +95,9 @@ pip install -r requirements.txt
 
 ### アプリ起動
 
-```bash
+
 ![Winter Road Analyzer](screenshots/gui_v1_result.png)
-```
+
 
 ---
 
