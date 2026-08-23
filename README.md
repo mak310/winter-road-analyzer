@@ -96,7 +96,7 @@ pip install -r requirements.txt
 ### アプリ起動
 
 ```bash
-![GUI実行](screenshots/gui_v1_result.png)
+![Winter Road Analyzer](screenshots/gui_v1_result.png)
 ```
 
 ---
